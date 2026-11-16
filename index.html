@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OmniAuto — navigation, music, and video for the drive</title>
+    <meta
+      name="description"
+      content="OmniAuto sends Google Maps navigation cues to a Volvo Sensus cluster, plays YouTube Music and local media, and keeps lyrics, queue, and video in one Android player."
+    />
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OmniAuto — navigation, music, and video for the drive" />
+    <meta
+      property="og:description"
+      content="Cluster navigation cues, YouTube Music and local playback, synced lyrics, Android Auto, and a fullscreen player."
+    />
+    <meta property="og:url" content="https://omniauto.siamcreations.app/" />
+    <meta property="og:image" content="https://omniauto.siamcreations.app/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://omniauto.siamcreations.app/" />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <img src="icon.png" alt="" />
+        <span class="name"><a href="/">OmniAuto</a></span>
+        <nav aria-label="Main">
+          <a href="#features">Features</a>
+          <a href="#screens">Screenshots</a>
+          <a href="#cluster">Cluster</a>
+          <a href="#download">Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <img class="logo" src="icon.png" alt="OmniAuto icon" />
+        <span class="badge">Test build 0.3</span>
+        <h1>Navigation, music, and video for the drive.</h1>
+        <p class="lede">
+          OmniAuto turns your Android phone into the media and navigation
+          companion for a Volvo Sensus cluster: Google Maps cues on the cluster,
+          YouTube Music and local playback, synced lyrics, and a fullscreen
+          player.
+        </p>
+        <div class="actions">
+          <a
+            class="button primary"
+            id="android-download"
+            href="https://github.com/pnoch/omniauto-releases/releases/tag/android-latest"
+            >Download test APK</a
+          >
+          <a
+            class="button secondary"
+            href="https://github.com/pnoch/omniauto-releases/releases/tag/android-latest"
+            >Release notes</a
+          >
+          <a class="button secondary" href="mailto:support@siamcreations.app"
+            >Support</a
+          >
+        </div>
+        <p class="muted" id="android-version">
+          Debug-signed test build · Android 11+ · 39 MB. Not a production
+          release.
+        </p>
+      </section>
+
+      <section class="wrap" id="features">
+        <h2>One companion for the phone, the car, and the cluster</h2>
+        <p class="section-lede">
+          Built around the 2017 XC90 Sensus display, with Android Auto and phone
+          playback sharing the same queue.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Cluster navigation cues</h3>
+            <p>
+              Distance, action, road, lane, exit and ETA from Google Maps
+              notifications, rendered on the cluster without a vehicle API.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Two libraries, one player</h3>
+            <p>
+              YouTube Music search, trending, playlists, downloads and history
+              sit beside your local music library and the shared Up next queue.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Lyrics that follow</h3>
+            <p>
+              Synced lyrics from LRCLIB, with SimpMusic and KuGou fallbacks,
+              cached for seven days and highlighted current and next line.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Fullscreen that behaves</h3>
+            <p>
+              Tap to hide chrome, drag to seek, ±10 s, captions, PiP and
+              buffered progress. A seek holds the chosen position until the
+              engine confirms it.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Android Auto</h3>
+            <p>
+              Browse and search from the car, control the queue, and keep the
+              same playback session as the phone.
+            </p>
+          </article>
+          <article class="card">
+            <h3>On-device vehicle matrix</h3>
+            <p>
+              Test the cluster's title, artist, artwork and field limits with a
+              guided matrix and a shareable diagnostic log.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Resume the drive</h3>
+            <p>
+              The queue, playback position and a pending seek survive app
+              restarts and ignition cycles, and resume paused where you left
+              them.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Local-first diagnostics</h3>
+            <p>
+              No account, no ads and no data selling. Telemetry and crash
+              reporting stay off until you enable them in Settings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="screens">
+        <h2>What it looks like</h2>
+        <p class="section-lede">
+          Android Auto keeps the cue, playback and queue on the car display;
+          the Sensus cluster gets the turn, road and distance from Google Maps.
+        </p>
+        <div class="shots">
+          <figure class="wide">
+            <img
+              src="screenshots/android-auto.png"
+              alt="OmniAuto on Android Auto showing a navigation cue, playback progress and queue"
+              loading="lazy"
+            />
+            <figcaption>
+              Android Auto — navigation cue, playback and queue on the car display
+            </figcaption>
+          </figure>
+          <figure class="phone">
+            <img
+              src="screenshots/cluster-cue.png"
+              alt="OmniAuto Sensus cluster cue showing a turn, road and distance"
+              loading="lazy"
+            />
+            <figcaption>
+              Sensus cluster — turn, road and distance from Google Maps
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="wrap" id="cluster">
+        <h2>Built for the Sensus cluster</h2>
+        <p class="section-lede">
+          The cues are metadata-only and the app never needs a vehicle API. The
+          same screen tests which fields your cluster accepts.
+        </p>
+        <div class="cluster">
+          <img
+            src="screenshots/cluster-page.png"
+            alt="OmniAuto Cluster page with a navigation cue, vehicle test and live media status"
+            loading="lazy"
+          />
+          <div>
+            <ul>
+              <li>Google Maps notification cues parsed on-device.</li>
+              <li>
+                Title, artist, artwork and field-limit probes in the vehicle
+                test.
+              </li>
+              <li>
+                The 2017 XC90 display is the target; other model years still need
+                validation.
+              </li>
+              <li>
+                Phone playback, Android Auto and the cluster share one session.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="download">
+        <h2>Download the test build</h2>
+        <p class="section-lede">
+          This is a debug-signed test build, not a production release. Android
+          11 or newer; allow installs from this source the first time.
+        </p>
+        <div class="actions" style="justify-content: flex-start">
+          <a
+            class="button primary"
+            id="android-download-2"
+            href="https://github.com/pnoch/omniauto-releases/releases/tag/android-latest"
+            >Android test APK</a
+          >
+          <a
+            class="button secondary"
+            href="https://github.com/pnoch/omniauto-releases/releases/tag/android-latest"
+            >Release notes</a
+          >
+          <a class="button secondary" href="mailto:support@siamcreations.app"
+            >Support</a
+          >
+        </div>
+        <p class="muted">
+          Current artifact SHA-256:
+          <code class="hash">3b03c17c29611b0724bdc86f29ffc2e424da4f10270e7f18dc15781cf00271a2</code>.
+          Older test builds and notes live on
+          <a href="https://github.com/pnoch/omniauto-releases/releases"
+            >GitHub Releases</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <span>© <span id="year">2026</span> OmniAuto</span>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="mailto:support@siamcreations.app">Support</a>
+          <a href="https://github.com/pnoch/omniauto-releases">Releases</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      const ANDROID_RELEASE =
+        "https://api.github.com/repos/pnoch/omniauto-releases/releases/tags/android-latest";
+
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear(),
+      );
+
+      fetch(ANDROID_RELEASE, {
+        headers: { Accept: "application/vnd.github+json" },
+      })
+        .then((response) => (response.ok ? response.json() : null))
+        .then((release) => {
+          const apk = release?.assets?.find((asset) =>
+            asset.name.toLowerCase().endsWith(".apk"),
+          );
+          if (!apk || !apk.browser_download_url) return;
+          for (const id of ["android-download", "android-download-2"]) {
+            document.getElementById(id).href = apk.browser_download_url;
+          }
+          const version = /omniauto-(\d+\.\d+)/i.exec(apk.name);
+          const size = apk.size
+            ? ` · ${Math.round(apk.size / 1048576)} MB`
+            : "";
+          document.getElementById("android-version").textContent =
+            `Test build${version ? ` ${version[1]}` : ""}${size}. ` +
+            "Debug-signed; allow installs from this source the first time. Not a production release.";
+        })
+        .catch(() => {
+          // The release-page links still work without the API.
+        });
+    </script>
+  </body>
+</html>

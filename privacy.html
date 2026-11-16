@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy — OmniAuto</title>
+    <meta name="theme-color" content="#0a0e1a" />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <img src="icon.png" alt="" />
+        <span class="name"><a href="/">OmniAuto</a></span>
+        <nav aria-label="Main">
+          <a href="/#features">Features</a>
+          <a href="/#screens">Screenshots</a>
+          <a href="/#download">Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal wrap">
+      <h1>Privacy</h1>
+      <p class="updated">Last updated 16 November 2026.</p>
+      <p>
+        OmniAuto runs on your phone and talks to the car through Android media
+        and notification surfaces. There is no OmniAuto account and no
+        first-party analytics server. Telemetry and crash reporting are off by
+        default.
+      </p>
+
+      <h2>Data the app handles</h2>
+      <ul>
+        <li>
+          <strong>Local audio metadata</strong> — title, artist, album, duration
+          and artwork from the device MediaStore, used to play and display your
+          library. Never uploaded by OmniAuto.
+        </li>
+        <li>
+          <strong>Lyrics lookup</strong> — when you open Lyrics, the track title,
+          artist and duration are sent over HTTPS to LRCLIB, SimpMusic or KuGou
+          to find synced or plain lyrics; OmniAuto does not store them
+          server-side.
+        </li>
+        <li>
+          <strong>YouTube data</strong> — search queries, results and playback
+          requests go through the bundled engine to YouTube. Sign-in cookies
+          are stored in the app's WebView storage and can be cleared by signing
+          out.
+        </li>
+        <li>
+          <strong>Navigation cues</strong> — Google Maps notification text is
+          parsed on-device for the cluster. The last cue and the playback queue
+          are stored locally so they can be restored.
+        </li>
+        <li>
+          <strong>Local history</strong> — search history, playback history and
+          the current queue are stored on the device and can be cleared from the
+          UI.
+        </li>
+      </ul>
+
+      <h2>Opt-in data</h2>
+      <ul>
+        <li>
+          <strong>Anonymous stats</strong> — when enabled, sends event names only
+          (no titles, queries, identifiers or location) to the configured
+          endpoint.
+        </li>
+        <li>
+          <strong>Crash reports</strong> — when enabled, sends stack traces to the
+          configured Sentry DSN.
+        </li>
+      </ul>
+      <p>
+        Both are off until you turn them on in Settings → App &amp; Advanced,
+        and can be turned off at any time.
+      </p>
+
+      <h2>Permissions and why</h2>
+      <ul>
+        <li><code>READ_MEDIA_AUDIO</code> — read local music.</li>
+        <li>
+          Notification listener access — read Google Maps navigation
+          notifications.
+        </li>
+        <li>
+          Foreground service — keep playback and cue delivery alive while
+          driving.
+        </li>
+        <li>
+          Internet — YouTube search and playback and optional updates or
+          telemetry.
+        </li>
+      </ul>
+
+      <h2>Controls</h2>
+      <ul>
+        <li>Clear search and playback history in the app.</li>
+        <li>Sign out of YouTube to clear its WebView cookies.</li>
+        <li>
+          Disable anonymous stats and crash reports in Settings → App &amp;
+          Advanced.
+        </li>
+        <li>
+          Uninstalling removes app-private data (history, queue, cookies and
+          tokens).
+        </li>
+      </ul>
+
+      <p>
+        No ads, no selling of data, and no third-party analytics beyond the
+        opt-in endpoints above. Questions:
+        <a href="mailto:support@siamcreations.app">support@siamcreations.app</a>.
+      </p>
+
+      <p><a class="button primary" href="/">Back to OmniAuto</a></p>
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <span>© <span id="year">2026</span> OmniAuto</span>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="mailto:support@siamcreations.app">Support</a>
+          <a href="https://github.com/pnoch/omniauto-releases">Releases</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear(),
+      );
+    </script>
+  </body>
+</html>
