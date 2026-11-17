@@ -127,7 +127,8 @@
               them. Search and car-browse durations are kept, so the seek bar works
               before the engine loads, and a seek made before the first play
               remembers a bottom-bar drag made before the duration is known,
-              then seeks in the existing YouTube session without resetting it.
+              waits for the duration, applies the seek while paused, then
+              plays in the existing YouTube session without resetting it.
             </p>
           </article>
           <article class="card">
@@ -227,7 +228,7 @@
         </div>
         <p class="muted">
           Current artifact SHA-256:
-          <code class="hash">6a3d61d022eccef29ca8e4b1464d05dc6d4c39ed8c94efd889592c5752fd8d35</code>.
+          <code class="hash">62527e16df8dadd67fe3ab6925b430ca772fccec1d0c31e0e276c01188de9ae3</code>.
           Older test builds and notes live on
           <a href="https://github.com/pnoch/omniauto-releases/releases"
             >GitHub Releases</a
