@@ -127,9 +127,9 @@
               them. Search and car-browse durations are kept, so the seek bar works
               before the engine loads, and a seek made before the first play
               remembers a bottom-bar drag made before the duration is known,
-              holds the seek dot, resolves the fraction with the engine's real
-              duration, and plays the first selected position in the existing
-              session. The waiting hint appears only after pressing play.
+              holds the seek dot, waits for the current track to be prepared,
+              resolves the fraction with its real length, and plays the first
+              selected position. The waiting hint appears only after play.
             </p>
           </article>
           <article class="card">
@@ -229,7 +229,7 @@
         </div>
         <p class="muted">
           Current artifact SHA-256:
-          <code class="hash">b0af96f938d82ce77fee584815f69146f1a0e14b4d6405373d0bf787ecb0f241</code>.
+          <code class="hash">9ab8c1bf0cc9b4a04c11ac95b49c19a1ceb905ed940315bc9744c719923f92f0</code>.
           Older test builds and notes live on
           <a href="https://github.com/pnoch/omniauto-releases/releases"
             >GitHub Releases</a
