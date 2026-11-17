@@ -131,7 +131,9 @@
               resolves the fraction with its real length, plays the first
               selected position, remembers each video's length, preloads a
               known seek target with a seek-release preload that buffers the
-              target while you decide, and never shows a stale Idle duration.
+              target while you decide, holds the dot through reloads and
+              retries, keeps the full track length when a reload reports a
+              short one, and never shows a stale Idle duration.
             </p>
           </article>
           <article class="card">
@@ -231,7 +233,7 @@
         </div>
         <p class="muted">
           Current artifact SHA-256:
-          <code class="hash">315f343ebbd2798140d0f9a676594108acf2d6e342e70332f8e750ba0b2d2650</code>.
+          <code class="hash">eae1d96eae6fbd35846dc7e809dcb98e1f979935128437d8aacb0f84100c88dd</code>.
           Older test builds and notes live on
           <a href="https://github.com/pnoch/omniauto-releases/releases"
             >GitHub Releases</a
