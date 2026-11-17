@@ -130,8 +130,8 @@
               holds the seek dot, waits for the current track to be prepared,
               resolves the fraction with its real length, plays the first
               selected position, remembers each video's length, preloads a
-              known seek target with a muted 0-position start and an earlier
-              YouTube engine warm-up, and never shows a stale Idle duration.
+              known seek target with a seek-release preload that buffers the
+              target while you decide, and never shows a stale Idle duration.
             </p>
           </article>
           <article class="card">
@@ -231,7 +231,7 @@
         </div>
         <p class="muted">
           Current artifact SHA-256:
-          <code class="hash">2e72c28b89349ab4e4f3ad27661d1638395611053a267cb8cd610da8416c34bf</code>.
+          <code class="hash">315f343ebbd2798140d0f9a676594108acf2d6e342e70332f8e750ba0b2d2650</code>.
           Older test builds and notes live on
           <a href="https://github.com/pnoch/omniauto-releases/releases"
             >GitHub Releases</a
