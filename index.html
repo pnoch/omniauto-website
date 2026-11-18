@@ -124,7 +124,9 @@
             <p>
               The queue, playback position and a pending seek survive app
               restarts and ignition cycles, and resume paused where you left
-              them. Search and car-browse durations are kept, so the seek bar works
+              them. A restored YouTube pause loads at zero silently and lands on
+              the saved spot when you play, avoiding the far paused load that
+              triggers YouTube token errors. Search and car-browse durations are kept, so the seek bar works
               before the engine loads, and a seek made before the first play
               remembers a bottom-bar drag made before the duration is known,
               holds the seek dot, waits for the current track to be prepared,
@@ -237,7 +239,7 @@
         </div>
         <p class="muted">
           Current artifact SHA-256:
-          <code class="hash">153355e4b1d17335969d481d659440665e2b0f35724a684e416efc74a9ae3d3d</code>.
+          <code class="hash">d4f70b1b89dc8d766be17b08c5d310921b3d0e2bff43a57e7b1f6a79f5ec63de</code>.
           Older test builds and notes live on
           <a href="https://github.com/pnoch/omniauto-releases/releases"
             >GitHub Releases</a
